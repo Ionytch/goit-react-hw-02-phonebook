@@ -1,6 +1,6 @@
 // import { Component } from "react";
 
- function Contacts ({names, onDeleteContacts}) {
+ function Contacts ({names, onDeleteContact}) {
            return (
             <ul>
                    {
@@ -8,7 +8,7 @@
                            <li key={name.id}>
                                <p>{name.name}:{name.number}</p>
                                
-                <button onClick={()=>onDeleteContacts(name.id)}>DELETE</button>
+                <button onClick={()=>onDeleteContact(name.id)}>DELETE</button>
                 </li>))}
             </ul>
         )
